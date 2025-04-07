@@ -3,6 +3,10 @@
     src: URL(images/Norse-Bold.otf);
 }
 
+:root {
+    --my-gap: 20px;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -28,7 +32,11 @@ body{
 .right {
     flex: 5;
     height: 100%;
-    background-color: blue;
+    background-color:hsl(35, 100%, 96%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
 }
 
 .left>img {
@@ -65,4 +73,45 @@ body{
 
 .left > p > a:active {
     color: hsl(0, 0%, 20%);
+}
+
+.right > form {
+    background-color:white;
+    box-shadow: 2px 2px 3px hsla(0, 0%, 0%, 0.5);
+    padding: 10px 0 20px 50px; 
+}
+
+.right > form > h3 {
+    font-size: 2em;
+}
+
+.right > form > .form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--my-gap)
+}
+
+.right > form > .form-container >.labin {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(50% - var(--my-gap));
+}
+
+.labin > label {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.labin > input {
+    height: 25px;
+    width: 70%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.right > .info {
+    margin-left: 50px;
+    font-size: 2em;
+    font-weight: 500;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
