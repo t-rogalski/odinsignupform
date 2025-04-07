@@ -1,3 +1,8 @@
+@font-face {
+    font-family: norse-font;
+    src: URL(images/Norse-Bold.otf);
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -10,9 +15,14 @@ body{
 }
 
 .left {
+    background: URL(images/greenleaf.jpg) center/cover;
     flex: 3;
     height: 100%;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
 }
 
 .right {
@@ -25,4 +35,34 @@ body{
     opacity: 0.9;
     width: 100%;
     height: 100%;
+}
+
+.imgOdin {
+    display: flex;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    margin-top: 150px;
+    height: 12rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    font-family: norse-font;
+}
+
+.imgOdin > img {
+    height: 100%;
+}
+
+.left > p > a {
+    color: white;
+    text-decoration: underline;
+}
+
+.left > p > a:hover {
+    color: hsl(0, 0%, 50%);
+}
+
+.left > p > a:active {
+    color: hsl(0, 0%, 20%);
 }
