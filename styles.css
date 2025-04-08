@@ -109,9 +109,44 @@ body{
     border: 1px solid black;
 }
 
+.labin > input:focus {
+    border: none;
+    outline: 1px solid blue;
+}
+
+.labin > input:invalid {
+    border: 1px solid red;
+}
+
+.labin > input:valid {
+    border: 1px solid green;
+}
+
 .right > .info {
     margin-left: 50px;
     font-size: 2em;
     font-weight: 500;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.right > button {
+    margin-left: 50px;
+    width: 225px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: hsl(110, 10%, 50%);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.right > p {
+    margin-left: 50px;
+    font-size: 1.2em;
+}
+
+.right > p > a {
+    text-decoration: none;
+    color: hsl(110, 10%, 50%);
 }
